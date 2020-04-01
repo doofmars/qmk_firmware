@@ -1,5 +1,5 @@
 #include QMK_KEYBOARD_H
-
+#include "quantum/keymap_extras/keymap_german.h"
 
 #ifdef RGBLIGHT_ENABLE
 //Following line allows macro to read current RGB settings
@@ -33,11 +33,11 @@ enum macro_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Z,    KC_U,    KC_I,    KC_O,   KC_P,   KC_ESC,\
+       KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         DE_Z,    KC_U,    KC_I,    KC_O,   KC_P,   KC_ESC,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_LGUI,\
+      KC_LSFT,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L,   DE_SS, KC_LGUI,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL,    KC_Y,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,\
+      KC_LCTL,    DE_Y,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, DE_MINS, KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_BSPC,   LOWER,  KC_SPC,     KC_ENT,  RAISE,  KC_DEL \
                                       //`--------------------------'  `--------------------------'
@@ -58,9 +58,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, KC_AMPR, KC_QUOT,  KC_GRV, KC_LPRN, KC_RPRN,                      KC_PERC, XXXXXXX, KC_PEQL, XXXXXXX, XXXXXXX, KC_BSPC,\
+       KC_TAB, KC_AMPR, KC_QUOT, DE_EURO, KC_LPRN, KC_RPRN,                      KC_PERC, DE_UDIA, KC_PEQL, DE_ODIA,  DE_DEG, KC_BSPC,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR,                      KC_LT,     KC_GT, KC_ASTR, KC_CIRC, KC_PIPE, KC_LGUI,\
+      KC_LSFT, DE_ADIA, KC_MINS,  KC_GRV, KC_LCBR, KC_RCBR,                      KC_LT,     KC_GT, KC_ASTR, KC_CIRC, KC_PIPE, KC_LGUI,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, KC_EXLM, KC_HASH,  KC_DLR, KC_LBRC, KC_RBRC,                      KC_UNDS, KC_PMNS, KC_PPLS, KC_BSLS, KC_SLSH, KC_LALT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
