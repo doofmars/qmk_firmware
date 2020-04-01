@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L,   DE_SS, KC_LGUI,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL,    DE_Y,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, DE_MINS, KC_RSFT,\
+      KC_LCTL,    DE_Y,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, DE_MINS, KC_LALT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_BSPC,   LOWER,  KC_SPC,     KC_ENT,  RAISE,  KC_DEL \
                                       //`--------------------------'  `--------------------------'
@@ -46,11 +46,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,  KC_INS, KC_PGDN,   KC_UP, KC_PGUP, KC_HOME,                      KC_PSLS,    KC_7,    KC_8,    KC_9, KC_PMNS, KC_BSPC,\
+       KC_TAB,  KC_INS, KC_PGDN,   KC_UP, KC_PGUP, KC_HOME,                      KC_PSLS,    KC_7,    KC_8,    KC_9, DE_MINS,  KC_ESC,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,  KC_DEL, KC_LEFT, KC_DOWN, KC_RGHT,  KC_END,                      KC_PAST,    KC_4,    KC_5,    KC_6, KC_PPLS, KC_LGUI,\
+      KC_LSFT,  KC_DEL, KC_LEFT, KC_DOWN, KC_RGHT,  KC_END,                      KC_PAST,    KC_4,    KC_5,    KC_6, DE_PLUS, KC_LGUI,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, KC_VOLD, KC_VOLU, KC_MPRV, KC_MNXT, KC_MPLY,                      KC_COMM,    KC_1,    KC_2,    KC_3, KC_PDOT, KC_LALT,\
+      KC_LCTL, KC_VOLD, KC_VOLU, KC_MPRV, KC_MNXT, KC_MPLY,                      KC_COMM,    KC_1,    KC_2,    KC_3,  KC_DOT, KC_LALT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_BSPC,   LOWER,  KC_SPC,     KC_ENT,   RAISE, KC_0 \
                                       //`--------------------------'  `--------------------------'
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, KC_AMPR, KC_QUOT, DE_EURO, KC_LPRN, KC_RPRN,                      KC_PERC, DE_UDIA, KC_PEQL, DE_ODIA,  DE_DEG, KC_BSPC,\
+       KC_TAB, KC_AMPR, KC_QUOT, DE_EURO, KC_LPRN, KC_RPRN,                      KC_PERC, DE_UDIA, KC_PEQL, DE_ODIA,  DE_DEG,  KC_ESC,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, DE_ADIA, KC_MINS,  KC_GRV, KC_LCBR, KC_RCBR,                      KC_LT,     KC_GT, KC_ASTR, KC_CIRC, KC_PIPE, KC_LGUI,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
